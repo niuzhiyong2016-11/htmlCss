@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background: royalblue;
+        }
+        div{
+            /*background: rgba(255,255,255,.5);*/
+            background: #fff;
+            /*display: none;*/
+            /*opacity: 0;*/
+            /*让盒子在视野中消失 但是还是在页面上占据空间 盒子依然可以被鼠标识别*/
+            /*0-1 0是完全透明 1是不透明*/
+            /*visibility: hidden;*/
+            /*盒子隐藏透明，但是盒子依然占据页面的空间，但是鼠标选中不了*/
+        }
+        div:hover{
+            /*display: block;*/
+            /*opacity: 1;*/
+            /*visibility: visible;*/
+        }
+        /*div:hover{
+            background: rgba(255,255,255,1);
+        }*/
+        div{
+            /*opacity: 0;*/
+            /*在设置透明度的时候，会让盒子的属性和内容都变得透明*/
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="天猫1/images/maotou.png" alt=""/>
+</div>
+<p style="height: 200px;background: red;"></p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+body,div,a,img,ul,li,h2,p,span{margin: 0;padding: 0;}
+/*body{font-family: "Microsoft YaHei";}*/
+body{font:12px/1.5 "Microsoft YaHei";}
+ul{list-style:none;}
+a{text-decoration: none;}
+img,input{vertical-align: top;}
+.clear:after{display: block;content:"";clear: both;}
+/*以上都是公共样式*/
+.content{margin: 0 auto;/*让一个有宽度的盒子在其父级盒子内水平居中*/
+    width:1226px;background-color: #f5f5f5;}
+.left{float: left;width: 234px;}
+.left img{width: 234px;height: 614px;}
+.list{float: right;width: 992px;}
+.item{position:relative;float: left;margin: 0 0 14px 14px;width: 234px;height:300px;background-color:#fff;text-align: center;}
+.item span{position: absolute;top:0;left:85px;width: 64px;height: 20px;background-color: #ffac13;text-align:center;line-height:20px;color: #fff;}
+.item img{margin-top:20px;width: 160px;height: 160px;}
+h2{padding-top:20px;font-size: 16px;font-weight:normal;background-color: #ccc;}
+/*a标签不能继承父级元素的颜色，只能单独设置*/
+h2 a{color:#333;}
+.text1{margin-top: 6px;color: #b0b0b0;font-size: 12px;}
+.text2{margin-top: 16px;color:#ff6700;font-size: 14px;}
+span.new{background-color: #83c44e;}
+img{vertical-align: top;}
+li:hover{top:-1px;box-shadow: 0px 3px 50px rgba(0,0,0,0.9)}
+/*第一个值代表水平方向  第二个值代表垂直方向 第三个值代表阴影的虚化范围 第四个值是色值 a代表透明度 支持从0-1的范围*/
+/*box-shadow 盒子的阴影*/
+/*img默认带有三像素的底部距离，这个距离是由于vertical-align基线对齐影响，我们将对齐方式改变成其他方式即可  top middle bottom*/
+/*
+vertical-align：元素的垂直对齐方式（行内元素和行内块级元素）
+baseline 基线对齐
+*/
+

@@ -1,0 +1,651 @@
+﻿/*去掉元素自带的margin和padding值*/
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  去掉元素自带的margin和padding值
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+
+/*所有元素继承body元素设置的字体大小和样式*/
+body {
+    font: 12px/1.5 "Microsoft Yahei";
+}
+
+/*去掉自带列表样式*/
+ul, ol {
+    list-style: none;
+}
+
+/*去掉自带加粗属性*/
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: normal;
+}
+
+/*都是特殊的行内元素 可以直接设置宽高*/
+img, input, select {
+    /*去掉自带边框*/
+    border: none;
+    /*改变垂直对齐方式*/
+    vertical-align: middle;
+}
+
+/*去掉input自带的边框*/
+input {
+    outline: none;
+}
+
+/*去掉自带下划线*/
+a {
+    text-decoration: none;
+}
+
+/*斜体扶正*/
+i, em {
+    font-style: normal;
+}
+
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*兼容ie7版本下的浏览器*/
+.clear {
+    zoom: 1;
+}
+
+/*全局默认样式重置*/
+
+.main {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #d0d0d0;
+    width: 100%;
+    height: 81px;
+    line-height: 81px;
+    background-color: #fff;
+}
+
+.nav .logo {
+    float: left;
+    margin-left: 25px;
+    margin-right: 600px;
+    width: 170px;
+    height: 81px;
+}
+
+.nav .logo img {
+    width: 170px;
+    height: 65px;
+}
+
+.nav .navList {
+    float: left;
+}
+
+.nav .navList a {
+    display: inline-block;
+    width: 58px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #34495e;
+}
+
+.nav .navList .first {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #8f59bd;
+}
+
+.nav .search {
+    float: left;
+    margin-left: 40px;
+}
+
+.nav .login {
+    float: right;
+    margin-right: 23px;
+}
+
+.nav .login a {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #34495e;
+}
+
+.nav .login a:hover {
+    color: #fff;
+    background-color: #8f59bd;
+}
+
+.content {
+    position: relative;
+    top: 81px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.content .banner {
+    padding-top: 8px;
+    width: 100%;
+    height: 432px;
+}
+
+.content .banner .pic img {
+    width: 100%;
+    height: 400px;
+}
+
+.content .banner .pic li {
+    display: none;
+}
+
+.content .banner .pic .on {
+    display: block;
+}
+
+.content .banner .switch {
+    font-size: 0;
+    text-align: center;
+}
+
+.content .banner .switch li {
+    display: inline-block;
+    margin: 11px 4px;
+    border: 1px solid #8f59bd;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content .banner .switch .on {
+    background-color: #8f59bd;
+}
+
+.content .banner .switch li:hover {
+    cursor: pointer;
+}
+
+.content .container .conTitle {
+    margin-top: 7px;
+    margin-bottom: 10px;
+    height: 52px;
+    font-size: 0;
+}
+
+.content .container .conTitle h3 {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    width: 380px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #999;
+}
+
+.content .container .conTitle .one {
+    border-bottom: 2px solid #8f59bd;
+    color: #8f59bd;
+}
+
+.content .container .conTitle h3:hover {
+    cursor: pointer;
+}
+
+.content .container .list {
+    margin-left: -20px;
+}
+
+.content .container .list > li {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 367px;
+    height: 346px;
+}
+
+.content .container .list .special {
+    width: 366px;
+}
+
+.content .container .list .bg {
+    height: 250px;
+}
+
+.content .container .list img {
+    width: 367px;
+    height: 250px;
+}
+
+.content .container .list .special img {
+    width: 366px;
+}
+
+.content .container .list .bottom {
+    border-top: 1px solid #f7f7f7;
+    padding: 6px 10px 2px;
+    height: 87px;
+    background-color: #fff;
+}
+
+.content .container .list .bottom h4 {
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+}
+
+.content .container .list .bottom h4 a {
+    color: #333;
+}
+
+.content .container .list .bottom h4 a:hover {
+    color: #8f59bd;
+}
+
+.content .container .list .bottom .bottom1 li {
+    float: left;
+    height: 42px;
+    font-size: 12px;
+    line-height: 42px;
+    color: #999;
+}
+
+.content .container .list .bottom .bottom1 img {
+    padding-right: 8px;
+    width: 16px;
+    height: 15px;
+}
+
+.content .container .list .bottom .bottom1 .word {
+    padding-left: 4px;
+    width: 129px;
+}
+
+.content .container .list .bottom .bottom1 .like {
+    width: 74px;
+}
+
+.content .container .list .bottom .bottom1 .like:hover {
+    cursor: pointer;
+}
+
+.content .container .list .bottom .bottom1 .view {
+    width: 88px;
+}
+
+.content .hot .discuss {
+    margin-bottom: 1px;
+    height: 77px;
+    color: #333;
+    background-color: #fff;
+}
+
+.content .hot .discuss .left {
+    float: left;
+    width: 95px;
+    height: 77px;
+    line-height: 77px;
+    text-align: center;
+}
+
+.content .hot .discuss .left img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+
+.content .hot .discuss .left img:hover {
+    cursor: pointer;
+}
+
+.content .hot .discuss .middle {
+    float: left;
+    padding: 5px 0 2px;
+    width: 760px;
+}
+
+.content .hot .discuss .middle a {
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    color: #333;
+}
+
+.content .hot .discuss .middle a:hover {
+    cursor: pointer;
+    color: #8f59bd;
+}
+
+.content .hot .discuss .middle .midBot {
+    height: 34px;
+    font-size: 12px;
+    line-height: 34px;
+}
+
+.content .hot .discuss .middle .midBot span {
+    display: inline-block;
+    width: 381px;
+}
+
+.content .hot .discuss .middle .midBot strong {
+    margin-left: 20px;
+}
+
+.content .hot .discuss .middle .midBot b {
+    display: inline-block;
+    width: 190px;
+}
+
+.content .hot .discuss .bottom {
+    float: left;
+    width: 275px;
+    padding: 13px 0 7px;
+}
+
+.content .hot .discuss .bottom a {
+    display: inline-block;
+    margin: 3px 5px 3px 0;
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 23px;
+    font-size: 12px;
+    line-height: 23px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #9db0af;
+}
+
+.content .hot .conTitle {
+    margin-top: 0;
+}
+
+.content .conEnd .title {
+    margin-top: 21px;
+    height: 80px;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 80px;
+    color: #8f59bd;
+}
+
+.content .conEnd .pro {
+    float: left;
+    margin-bottom: 20px;
+    width: 367px;
+    height: 360px;
+    background-color: #fff;
+}
+
+.content .conEnd .pro img {
+    width: 367px;
+    height: 250px;
+}
+
+.content .conEnd .pro .pro1 {
+    border-top: 1px solid #f0f0f0;
+    padding: 8px 10px;
+    width: 347px;
+    height: 93px;
+}
+
+.content .conEnd .pro .word {
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #333;
+}
+
+.content .conEnd .pro .word:hover {
+    color: #966dc1;
+}
+
+.content .conEnd .pro .name {
+    height: 37px;
+    font-size: 12px;
+    line-height: 37px;
+    color: #272727;
+}
+
+.content .conEnd .pro .name i {
+    margin-left: 30px;
+    color: #999;
+}
+
+.content .conEnd .pro .sum {
+    height: 18px;
+    line-height: 18px;
+    color: #999;
+}
+
+.content .conEnd .pro .sum b {
+    float: right;
+}
+
+.partner p {
+    margin-top: 20px;
+    height: 80px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 900;
+    color: #8f59bd;
+}
+
+.partner .pic {
+    margin-left: -74px;
+}
+
+.partner .pic img {
+    width: 120px;
+    height: 120px;
+    margin-left: 74px;
+    margin-bottom: 20px;
+}
+
+.link {
+    width: 100%;
+    height: 362px;
+    background-color: #8f59bd;
+}
+
+.link .link1 .link2 {
+    float: left;
+    width: 385px;
+}
+
+.link .link1 .link2 p {
+    padding-left: 1px;
+    width: 385px;
+    height: 120px;
+    font-size: 22px;
+    line-height: 120px;
+    color: #be8fff;
+}
+
+.link .link1 .link2 p img {
+    margin-right: 6px;
+    width: 76px;
+    height: 76px;
+}
+
+.link .link1 .link2 .btn {
+    padding: 10px 0;
+    width: 386px;
+    height: 160px;
+}
+
+.link .link1 .link2 .btn a {
+    display: inline-block;
+    margin: 20px 101px 20px 0;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .26);
+    color: #fff;
+}
+
+.link .link1 .link2 .btn a:hover {
+    color: #a9a9a9;
+}
+
+.link .link1 dl {
+    float: left;
+    padding-top: 20px;
+    width: 484px;
+}
+
+.link .link1 dt {
+    font-size: 18px;
+    line-height: 30px;
+    color: #be8fff;
+}
+
+.link .link1 dd {
+    float: left;
+    width: 161px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.link .link1 dd a {
+    color: #fff;
+}
+
+.link .link1 dd a:hover {
+    color: #a9a9a9;
+}
+
+.link .link1 .ewm {
+    float: left;
+    padding-top: 10px;
+    width: 270px;
+}
+
+.link .link1 .ewm p {
+    height: 48px;
+    font-size: 18px;
+    line-height: 48px;
+    color: #be8fff;
+}
+
+.link .link1 .ewm img {
+    margin-bottom: 3px;
+    width: 150px;
+    height: 150px;
+}
+
+.link .link1 .ewm a {
+    display: block;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.link .link1 > p {
+    margin-top: 4px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    color: #9b97a9;
+}
+
+.link .link1 > p a {
+    color: #fff;
+}
+
+.link .link1 > p a:hover {
+    text-decoration: underline;
+}
+
+.fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 81px;
+    transition: bottom ease .3s;
+}
+
+.fixed .ewm {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    padding: 11px;
+    background-color: #dadbdd;
+}
+
+.fixed .ewm:hover {
+    cursor: pointer;
+}
+
+.fixed .ewm i {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/side-icon01.png");
+}
+
+.fixed .ewm div {
+    position: absolute;
+    opacity: 0;
+    top: -129px;
+    left: -211px;
+    width: 210px;
+    height: 210px;
+    background: url("../images/weixin.jpg");
+    transform: scale(0);
+    transform-origin: 100% 70%;
+    transition: all ease .3s;
+}
+
+.fixed .ewm:hover div {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fixed .toTop {
+    display: block;
+    margin-top: 1px;
+    padding: 14px 8px 14px 9px;
+    width: 23px;
+    height: 12px;
+    background-color: #6639b6;
+}
+
+.fixed .toTop:hover {
+    cursor: pointer;
+    background-color: #a3a3a3;
+}
+
+.fixed .toTop i {
+    display: block;
+    width: 23px;
+    height: 12px;
+    background: url("../images/side-icon02.png");
+}
